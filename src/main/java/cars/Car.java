@@ -1,11 +1,13 @@
+package cars;
+
 public abstract class Car {
-    private int registrationNumber;
+    private String registrationNumber;
     private String brand;
     private String model;
     private int year;
     private int numberOfDoors;
 
-    public Car(int registrationNumber, String brand, String model, int year, int numberOfDoors) {
+    public Car(String registrationNumber, String brand, String model, int year, int numberOfDoors) {
         this.registrationNumber = registrationNumber;
         this.brand = brand;
         this.model = model;
@@ -19,11 +21,11 @@ public abstract class Car {
         return "";
     }
 
-    public int getRegistrationNumber() {
+    public String getRegistrationNumber() {
         return registrationNumber;
     }
 
-    public void setRegistrationNumber(int registrationNumber) {
+    public void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
 
